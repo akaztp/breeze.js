@@ -8138,7 +8138,7 @@ var EntityType = (function () {
     var serverPropName = clientPropName + "OnServer";
     var clientName = parent[clientPropName];
     var serverName = parent[serverPropName];
-    if (clientName && clientName.length && !(serverName && serverName.length > 0))
+    if (clientName && clientName.length && !(serverName && serverName.length > 0)) {
       // if (parent.isUnmapped) return;
       var serverNames = __toArray(clientName).map(function (cName) {
         var sName = nc.clientPropertyNameToServer(cName, parent);
